@@ -15,8 +15,8 @@ public class Tipo extends Word {
 		this.quantidade=quantidade;
 	}
 	
-	public static final Tipo inteiro= new Tipo("int", Tag.Basic, 1);
-	public static final Tipo booleano= new Tipo("boolean", Tag.Basic, 2);
+	public static final Tipo inteiro= new Tipo("INT", Tag.Basic, 1);
+	public static final Tipo booleano= new Tipo("BOOLEAN", Tag.Basic, 2);
 	
 	public static boolean numeric(Tipo p){
 		if(p== Tipo.inteiro){

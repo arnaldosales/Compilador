@@ -18,6 +18,7 @@ public class Lexer {
 		private char caracterLido;
 
 		private List<Token> lexemas = new ArrayList<Token>();
+		public List<String> ids = new ArrayList<String>();
 
 		private String condigoFonte;
 
@@ -174,7 +175,8 @@ public class Lexer {
 						lexemas.add(p);
 
 					} else {
-						// retorne erro.
+						// retorne erro.sy
+						System.out.println("erro");
 					}
 
 				} else if (isMinusculo(caracterLido)) {// m
@@ -190,6 +192,7 @@ public class Lexer {
 					}
 
 					lexemas.add(new Word(id, Tag.id));
+					ids.add(id);
 
 				} else if (isNumero(caracterLido)) {// 1
 					String numero = caracterLido + "";
@@ -274,8 +277,11 @@ public class Lexer {
 				}
 
 			}
-
+			for(int i=0 ;i< palavrasReservadas.size();i++){
+				
+			}
 			return lexemas;
+			
 		}
 
 		private boolean isPalavraReservada(String p) {

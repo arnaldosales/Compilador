@@ -30,18 +30,18 @@ public class Word extends Token{
 	public static final Word MaiorIgual = new Word(">=",Tag.maiorIgual);
 	public static final Word Menorigual = new Word("<=",Tag.menorIgual);
 	public static final Word atribuicao = new Word("=",Tag.atribuicao);
-	public static final Word seNao = new Word("else",Tag.seNao);
-	public static final Word se = new Word("if",Tag.se);
-	public static final Word parar = new Word("break",Tag.parar);
-	public static final Word Continue = new Word("continue",Tag.Continue);
-	public static final Word retorna = new Word("return",Tag.retorno);
+	public static final Word seNao = new Word("ELSE",Tag.seNao);
+	public static final Word se = new Word("IF",Tag.se);
+	public static final Word parar = new Word("BREAK",Tag.parar);
+	public static final Word Continue = new Word("CONTINUE",Tag.Continue);
+	public static final Word retorna = new Word("RETURN",Tag.retorno);
 	//foi apagado tipo boleano e inteiro
-	public static final Word verdadeiro = new Word("true",Tag.verdadeiro);
-	public static final Word falso = new Word("falso",Tag.falso);
+	public static final Word verdadeiro = new Word("TRUE",Tag.verdadeiro);
+	public static final Word falso = new Word("FALSO",Tag.falso);
 	public static final Word Comparacao = new Word("==",Tag.Comparacao);
 	public static final Word tempo = new Word("temp",Tag.Temp);
 	public static final Word minus = new Word("minus",Tag.Minu);
-	public static final Word vazio = new Word("void",Tag.vazio);
+	public static final Word vazio = new Word("VOID",Tag.vazio);
 	
 	
 	@Override
