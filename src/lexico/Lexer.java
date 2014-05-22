@@ -9,7 +9,11 @@ import simbolos.Tipo;
 public class Lexer {
 
 	
-		private int numeroLinha = 1;
+		public static int lib;
+
+		public static int line;
+
+		public static int numeroLinha = 1;
 
 		private int linhaAtual;
 
