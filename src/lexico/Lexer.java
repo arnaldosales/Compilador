@@ -11,7 +11,7 @@ public class Lexer {
 	
 		public static int lib;
 
-		public static int line;
+		
 
 		public static int numeroLinha = 1;
 
